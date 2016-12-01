@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
 		var thisID	=	$(this).attr('id');
 		if (thisID === 'BTC') {
 			showQR(BTCQR);
-			new Clipboard('#BTCBn');
+			// new Clipboard('#BTCBn');
 		} else if (thisID === 'AliPay') {
 			showQR(AliPayQR);
 		} else if (thisID === 'WeChat') {
