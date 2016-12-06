@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+window.onload = function () {
 	var QRBox	=	$('#QRBox');
 	var MainBox	=	$('#MainBox');
 	var BTCQR	=	'images/BTCQR.png';	// 二维码路径
@@ -39,4 +39,4 @@ jQuery(document).ready(function() {
 		},600);
 
 	});
-});
+};
