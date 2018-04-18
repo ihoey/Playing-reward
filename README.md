@@ -1,6 +1,8 @@
 # Playing-reward
 一个打赏的小功能
 
+博客版本请查看 `hexo` 分支  (点击跳转)[https://github.com/ihoey/Playing-reward/tree/hexo]
+
 ### 直接 `Fork` 
 
 ### 修改 html 内链接地址
