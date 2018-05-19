@@ -1,39 +1,32 @@
-jQuery(document).ready(function () {
-	var QRBox = $('#QRBox');
-	var MainBox = $('#MainBox');
-	var QQPayQR = 'images/QQPayQR.png';
-	var AliPayQR = 'images/AliPayQR.png';
-	var WeChanQR = 'images/WeChanQR.png';
+const bd = document.querySelector('body')
+const qbox = bd.querySelector('#QRBox')
+const mbox = bd.querySelector('#MainBox')
+const dbox = bd.querySelector('#donateBox')
 
-	function showQR(QR) {
-		if (QR) {
-			MainBox.css('background-image', 'url(' + QR + ')');
-		}
-		$('#DonateText,#donateBox,#github').addClass('blur');
-		QRBox.fadeIn(300, function (argument) {
-			MainBox.addClass('showQR');
-		});
-	}
+const qqr = 'images/QQPayQR.png'
+const aqr = 'images/AliPayQR.png'
+const wqr = 'images/WeChanQR.png'
 
-	$('#donateBox>li').click(function (event) {
-		var thisID = $(this).attr('id');
-		if (thisID === 'QQPay') {
-			showQR(QQPayQR);
-		} else if (thisID === 'AliPay') {
-			showQR(AliPayQR);
-		} else if (thisID === 'WeChat') {
-			showQR(WeChanQR);
-		}
-	});
+const showQR = (QR) => {
+	if (QR) mbox.style.backgroundImage = `url(${ QR })`
+	bd.classList.add('blur')
+	qbox.classList.add('fadeIn')
+	mbox.classList.add('showQR')
+}
 
-	MainBox.click(function (event) {
-		MainBox.removeClass('showQR').addClass('hideQR');
-		setTimeout(function (a) {
-			QRBox.fadeOut(300, function (argument) {
-				MainBox.removeClass('hideQR');
-			});
-			$('#DonateText,#donateBox,#github').removeClass('blur');
-		}, 600);
+dbox.addEventListener('click', (e) => {
+	let el = e.target
+	if (el.id === 'QQPay') showQR(qqr)
+	else if (el.id === 'AliPay') showQR(aqr)
+	else if (el.id === 'WeChat') showQR(wqr)
+})
 
-	});
-});
+mbox.addEventListener('click', () => {
+	mbox.classList.remove('showQR')
+	mbox.classList.add('hideQR')
+	setTimeout(a => {
+		qbox.classList.remove('fadeIn')
+		mbox.classList.remove('hideQR')
+		bd.classList.remove('blur')
+	}, 600)
+})

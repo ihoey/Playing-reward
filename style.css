@@ -1,7 +1,7 @@
 html,
 html>body {
-	margin: 0px !important;
-	padding: 0px !important;
+	margin: 0px;
+	padding: 0px;
 	height: 100%;
 	width: 100%;
 }
@@ -43,7 +43,9 @@ a {
 	height: 100%;
 }
 
-.blur {
+.blur #DonateText,
+.blur #donateBox,
+.blur #github {
 	-webkit-filter: blur(3px);
 	filter: blur(3px);
 }
@@ -175,13 +177,13 @@ a {
 }
 
 #MainBox.showQR {
-	opacity: 1;
 	animation-name: showQR;
 	animation-duration: 3s;
 	animation-timing-function: ease-in-out;
+	animation-delay: 300ms;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
-	-webkit-animation: showQR 3s ease-in-out 0s 1 normal forwards;
+	-webkit-animation: showQR 3s ease-in-out 300ms 1 normal forwards;
 }
 
 @keyframes showQR {
@@ -246,4 +248,32 @@ a {
 		opacity: 0;
 		transform: rotateZ(40deg) scale(0.6, 0.6);
 	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#QRBox.fadeIn {
+	display: block;
+	animation: fadeIn 300ms;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+#QRBox.fadeOut {
+	display: block;
+	animation: fadeOut 300ms;
 }
