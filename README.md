@@ -3,9 +3,15 @@
 
 修改自 [donate-page](https://github.com/Kaiyuan/donate-page)
 
+![](https://img.shields.io/badge/language-JavaScript-blue.svg?style=flat-square)
+![](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)
+[![](https://img.shields.io/badge/github-ihoey-orange.svg?style=flat-square)](https://github.com/ihoey)
+[![](https://img.shields.io/badge/QQ-✘д✘ヽゝだよ-red.svg?style=flat-square)](http://wpa.qq.com/msgrd?v=3&uin=1058221214&site=qq&menu=yes)
+[![](https://img.shields.io/badge/blog-ihoey-ff69b4.svg?style=flat-square)](https://blog.ihoey.com)
+
 博客版本请查看 `hexo` 分支  [点击跳转](https://github.com/ihoey/Playing-reward/tree/hexo)
 
-### 直接 `Fork` 
+### 直接 `Fork`
 
 ### 修改 html 内链接地址
 
