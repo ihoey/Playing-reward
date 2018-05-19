@@ -1,6 +1,8 @@
 # Playing-reward
 一个打赏的小功能
 
+修改自 [donate-page](https://github.com/Kaiyuan/donate-page)
+
 博客版本请查看 `hexo` 分支  [点击跳转](https://github.com/ihoey/Playing-reward/tree/hexo)
 
 ### 直接 `Fork` 
