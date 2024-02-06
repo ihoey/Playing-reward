@@ -33,6 +33,6 @@
 
 打赏一下的话就更好了~
 
-![微信支付](images/WeChanQR.png)
+![微信支付](images/WeChatQR.png)
 
 ![支付宝支付](images/AliPayQR.png)
